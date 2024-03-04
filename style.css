@@ -451,6 +451,7 @@
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 1rem;
+  max-width: 50%;
 }
 .contact .container p{
   margin-bottom: 2rem;
@@ -486,6 +487,12 @@
   .footer .footer__wrapper{
     flex-direction: column;
     align-items: center;
+  }
+  .contact .container h2{
+    max-width: 90%;
+    font-size: 3rem;
+    text-align: center;
+    
   }
 }
 
@@ -945,8 +952,9 @@
   margin-right: 2rem;
   font-size: 3rem;
  }
-a{
+.contactform__left a{
   text-align: center;
+  letter-spacing: 1rem;
 }
 /* CONTACTS RESPONSIVE */
 @media screen and (max-width: 520px){
@@ -975,6 +983,12 @@ a{
     resize: none;
     width: 100%;
    }
+   .contactform__left{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    
+  }
   
 }
 
