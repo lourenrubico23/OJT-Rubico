@@ -796,7 +796,7 @@
 .recent .recent__wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 7rem;
+  gap: 3rem;
   align-items: center;
 }
 .recent__title{
@@ -810,12 +810,98 @@
   display: flex;
   flex-direction: column;
 }
-.recent__card .icons{
+.icons{
   display: flex;
+  justify-content: flex-start; 
 }
 .recent__card .icons i{
   margin-right: 1rem;
+  margin-left: 2rem;
+  font-size: 2rem;
 }
+.recent__card .icons p{
+  margin-right: 8rem;
+  font-size: 2rem;
+}
+
+/* --------------------------------- CONTACT PAGE-------------------------- */
+.contactform{
+  padding-top: 20rem;
+  padding-bottom: 30rem;
+  background-color: var(--clr-semilight);
+}
+.contactform__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactform__left{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 30rem;
+  
+}
+
+.contactform__right{
+  background-color: var(--clr-dark);
+  padding: 4rem;
+  width: 35rem;
+  height: 35rem;
+ 
+}
+.contactform__title h1{
+  font-size: 5rem;
+  color: var(--clr-primary);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.contactform__title p{
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+ .contactform__right p{
+  color: var(--clr-dark);
+  margin-bottom: 4rem;
+ }
+ input{
+  background-color: var(--clr-semilight);
+  border-color: var(--clr-semilight);
+  font-size: 2rem;
+  border: none;
+  margin-bottom: 3rem;
+  outline: none;
+  border-bottom: .2rem  solid #888;
+ }
+ input:hover{
+  background-color: var(--clr-semilight);
+  border: var(--clr-semilight);
+ }
+
+ textarea{
+  background-color: var(--clr-semilight);
+  border-color: var(--clr-semilight);
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  border-bottom: .2rem  solid #888;
+ }
+ .contactform__right h2{
+  font-size: 2rem;
+  color: var(--clr-light);
+  margin-bottom: 2rem;
+ }
+ .contactform__right ul li{
+  color: var(--clr-light);
+  margin-bottom: 2rem;
+ }
+ .contactform__right i{
+  color: var(--clr-secondary);
+  margin-right: 2rem;
+  font-size: 3rem;
+ }
+
+
 
 
 
@@ -842,4 +928,12 @@
   }
   .btn--nobg:hover{
     color:  darken var(--clr-primary)
+  }
+  .btn.bg--dark{
+    background-color: var(--clr-dark);
+    color: var(--clr-semilight);
+  }
+  .btn.bg--dark:hover{
+    background-color: var(--clr-semilight);
+    color: var(--clr-dark);
   }
