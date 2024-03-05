@@ -918,11 +918,12 @@
  input{
   background-color: var(--clr-semilight);
   border-color: var(--clr-semilight);
-  font-size: 2rem;
+  font-size: 5rem;
   border: none;
   margin-bottom: 3rem;
   outline: none;
   border-bottom: .2rem  solid #888;
+  font: var(--truculenta);
  }
  input:hover{
   background-color: var(--clr-semilight);
@@ -931,12 +932,13 @@
  textarea{
   background-color: var(--clr-semilight);
   border-color: var(--clr-semilight);
-  font-size: 2rem;
+  font-size: 5rem;
   border: none;
   outline: none;
   border-bottom: .2rem  solid #888;
   resize: none;
   width: 100%;
+  font: var(--truculenta);
  }
  .contactform__right h2{
   font-size: 2rem;
